@@ -1,0 +1,33 @@
+.navbar{
+  margin: 0 auto;
+  height: 60px;
+  color:lightblue;
+  background: rgb(0, 0, 0);
+  width: 100vw;
+  font-weight: 400;
+  @extend %flex-center;
+  .logo{
+    height: 70px;
+    margin-left: 10vw;
+    position: relative;
+    z-index: 5;
+  }
+  ul{
+    width: 60vw;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    li{
+      height: 100%;
+      width: 100px;
+      list-style: none;
+      margin-right: 2vw;
+      font-size: 1.2rem;
+      @extend %flex-center;
+      &.active,&:hover{
+        border-bottom: 6px solid #05fffa;
+        //color: #200e67;
+      }
+    }
+  }
+}
